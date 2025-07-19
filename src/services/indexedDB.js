@@ -31,7 +31,7 @@ export async function saveMovie(movie) {
         return new Promise((resolve, reject) => {
             const tx = db.transaction(STORE_NAME, 'readwrite');
             const store = tx.objectStore(STORE_NAME);
-            const request = store.put(movie); // Menyimpan atau update
+            const request = store.put(movie); 
 
             request.onsuccess = () => resolve(true);
             request.onerror = (event) => {
