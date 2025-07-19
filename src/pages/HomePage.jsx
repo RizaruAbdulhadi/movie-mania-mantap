@@ -127,7 +127,7 @@ const HomePage = () => {
     const closeModal = () => {
         setSelectedMovie(null);
         setShowModal(false);
-        refreshSidebar(); // Refresh sidebar ketika modal ditutup
+        refreshSidebar();
     };
 
     const handleAddToWatchList = async (movie) => {
