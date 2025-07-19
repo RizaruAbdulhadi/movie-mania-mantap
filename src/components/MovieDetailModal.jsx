@@ -100,7 +100,6 @@ const MovieDetailModal = ({ movie, show, onClose, onUpdateSidebar }) => {
 
                     <p>{movie.Plot && movie.Plot !== 'N/A' ? movie.Plot : 'No overview available.'}</p>
 
-                    {/* Responsive Buttons */}
                     <div className="row mt-4">
                         <div className="col-12 col-md-6 mb-2">
                             <Button
@@ -123,7 +122,6 @@ const MovieDetailModal = ({ movie, show, onClose, onUpdateSidebar }) => {
                         </div>
                     </div>
 
-                    {/* Feedback Section */}
                     <div className="user-feedback mt-5 pt-3 border-top">
                         <h5 className="mb-3">Your Feedback</h5>
 
