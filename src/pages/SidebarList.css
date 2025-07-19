@@ -1,0 +1,93 @@
+/* Wrapper utama */
+.homepage-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+/* Container membungkus main content dan sidebar */
+.content-container {
+    display: flex;
+    gap: 50px;
+    max-width: 90%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+
+/* Main content style */
+.main-content {
+    flex: 2;
+    padding: 50px;
+}
+
+/* Sidebar style */
+.sidebar-container {
+    flex: 1;
+    background-color: white;
+    backdrop-filter: blur(50px);
+    padding: 15px 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+    min-width: 250px;
+    max-width: 10%;
+    padding: 24px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-section li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.year {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.empty-list {
+    font-style: italic;
+    color: #999;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 5rem;
+    margin: 20px 0;
+    color: #f5c518;
+    text-shadow: 1px 1px 5px black;
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.network-status {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}
