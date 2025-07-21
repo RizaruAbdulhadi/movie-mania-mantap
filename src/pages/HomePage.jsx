@@ -14,6 +14,7 @@ import {
     getWatchedList
 } from '../services/storage';
 import './SidebarList.css';
+import './HomePage.css'
 
 const API_KEY = 'bd1056a1';
 

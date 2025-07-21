@@ -1,26 +1,3 @@
-/* Wrapper utama */
-.homepage-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-/* Container membungkus main content dan sidebar */
-.content-container {
-    display: flex;
-    gap: 50px;
-    max-width: 90%;
-    width: 100%;
-    backdrop-filter: blur(3px);
-}
-
-/* Main content style */
-.main-content {
-    flex: 2;
-    padding: 50px;
-}
-
 /* Sidebar style */
 .sidebar-container {
     flex: 1;
