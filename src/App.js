@@ -9,7 +9,6 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/movie/:id" element={<MovieDetail />} />
                 </Routes>
             </Router>
         </React.StrictMode>
