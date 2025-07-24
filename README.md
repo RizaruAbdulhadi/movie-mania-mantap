@@ -27,13 +27,9 @@ In the project directory, you can run:
 
 
 # Alur Kerja Aplikasi
-User Buka Aplikasi → Default Search "2025" → Ambil data dari OMDb API
-↓
-Tampil daftar Movie → Klik satu Movie → Muncul Modal
-↓
-User bisa Add to Watchlist / Mark as Watched
-↓
-Feedback Rating + Komentar
-↓
-Jika Offline → Data tetap disimpan ke IndexedDB dan disinkronkan saat Online
+1. User Buka Aplikasi → Default Search "2025" → Ambil data dari OMDb API
+2. Tampil daftar Movie → Klik satu Movie → Muncul Modal
+3. User bisa Add to Watchlist / Mark as Watched
+4. Feedback Rating + Komentar
+5. Jika Offline → Data tetap disimpan ke IndexedDB dan disinkronkan saat Online
 
