@@ -1,5 +1,7 @@
-## Nama: Movie Mania Mantap
-Jenis Aplikasi: Movie catalog app (mirip mini IMDb)
+# 🎬 Movie Mania Mantap
+
+Movie Mania Mantap adalah aplikasi katalog film berbasis ReactJS yang memungkinkan pengguna mencari informasi film, menambahkan film ke **Watchlist**, menandai film sebagai **Watched**, dan memberikan feedback seperti rating dan komentar. Aplikasi ini juga mendukung **offline mode** menggunakan IndexedDB.
+
 
 # Fitur                 
 1. 🔍 **Search Film**          : Cari film berdasarkan judul (default tahun 2025)                
@@ -20,6 +22,7 @@ Jenis Aplikasi: Movie catalog app (mirip mini IMDb)
   📡 Service Worker + online/offline detection
   💅 CSS custom (dengan Bootstrap)
 
+
 In the project directory, you can run:
 
 ### Struktur Program
@@ -33,3 +36,35 @@ In the project directory, you can run:
 4. Feedback Rating + Komentar
 5. Jika Offline → Data tetap disimpan ke IndexedDB dan disinkronkan saat Online
 
+## 🚀 Instalasi dan Menjalankan Proyek
+
+1. Clone Repository
+
+bash
+git clone https://github.com/RizaruAbdulhadi/movie-mania-mantap.git
+cd movie-mania-mantap
+
+2. Install Dependencies
+
+bash
+npm install
+
+3. Jalankan Aplikasi
+
+bash
+npm start
+
+4. Build untuk Produksi
+
+bash
+npm run build
+
+
+## Aplikasi ini menggunakan OMDb API. Untuk mengganti API key, edit file HomePage.jsx:
+
+const API_KEY = 'bd1056a1'; // Ganti sesuai kebutuhan
+
+
+🙋‍♂️ Pengembang
+
+Made by Febrizal Abdul Hadi Suparmo
