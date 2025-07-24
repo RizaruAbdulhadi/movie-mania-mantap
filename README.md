@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+## Nama: Movie Mania Mantap
+Jenis Aplikasi: Movie catalog app (mirip mini IMDb)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fitur                 
+1. 🔍 **Search Film**          : Cari film berdasarkan judul (default tahun 2025)                
+2. 📋 **Watchlist**            : Simpan film yang ingin ditonton                                 
+3. ✅ **Watched List**         : Tandai film yang sudah ditonton                                 
+4. 📴 **Offline Mode**         : Bisa menambahkan film meski offline, data disimpan di IndexedDB 
+5. 🌐 **Status Online/Offline**: Deteksi jaringan dan tampilkan status                           
+6. 🧾 **Movie Detail Modal**   : Modal dengan data detail + form feedback rating & komentar      
+7. 💾 **Feedback User**        : Simpan komentar + rating lokal di localStorage                  
 
-## Available Scripts
+
+# Tech Stack:
+
+  ⚛️ ReactJS (Frontend framework)
+  📦 IndexedDB via idb (untuk penyimpanan offline)
+  🌐 OMDb API (sumber data film)
+  💾 LocalStorage (untuk watchlist & feedback)
+  📡 Service Worker + online/offline detection
+  💅 CSS custom (dengan Bootstrap)
 
 In the project directory, you can run:
 
-### `npm start`
+### Struktur Program
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Struktur Utama Proyek
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+movie-mania-mantap/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/                  → Gambar/icon
+│   ├── components/
+│   │   ├── MovieCard.jsx        → Kartu film (thumbnail + aksi)
+│   │   ├── MovieDetailModal.jsx → Modal detail film + feedback
+│   │   └── SearchBar.jsx        → Input pencarian film
+│   ├── pages/
+│   │   ├── HomePage.jsx         → Halaman utama dan sidebar
+│   ├── services/
+│   │   ├── indexedDB.js         → Fungsi simpan offline (IndexedDB)
+│   │   └── storage.js           → Fungsi localStorage (watchlist/watched)
+│   ├── App.js                   → Routing utama
+│   ├── index.js                 → Root React
+│   └── App.css / SidebarList.css / MovieDetailModal.css → Styling
+├── package.json
+└── README.md
 
-### `npm test`
+# Alur Kerja Aplikasi
+User Buka Aplikasi → Default Search "2025" → Ambil data dari OMDb API
+↓
+Tampil daftar Movie → Klik satu Movie → Muncul Modal
+↓
+User bisa Add to Watchlist / Mark as Watched
+↓
+Feedback Rating + Komentar
+↓
+Jika Offline → Data tetap disimpan ke IndexedDB dan disinkronkan saat Online
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
