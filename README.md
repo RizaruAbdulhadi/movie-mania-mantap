@@ -23,28 +23,8 @@ Jenis Aplikasi: Movie catalog app (mirip mini IMDb)
 In the project directory, you can run:
 
 ### Struktur Program
+<img width="752" height="604" alt="gambar" src="https://github.com/user-attachments/assets/170f7e37-4121-4545-be4d-a499af18b659" />
 
-Struktur Utama Proyek
-
-movie-mania-mantap/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/                  → Gambar/icon
-│   ├── components/
-│   │   ├── MovieCard.jsx        → Kartu film (thumbnail + aksi)
-│   │   ├── MovieDetailModal.jsx → Modal detail film + feedback
-│   │   └── SearchBar.jsx        → Input pencarian film
-│   ├── pages/
-│   │   ├── HomePage.jsx         → Halaman utama dan sidebar
-│   ├── services/
-│   │   ├── indexedDB.js         → Fungsi simpan offline (IndexedDB)
-│   │   └── storage.js           → Fungsi localStorage (watchlist/watched)
-│   ├── App.js                   → Routing utama
-│   ├── index.js                 → Root React
-│   └── App.css / SidebarList.css / MovieDetailModal.css → Styling
-├── package.json
-└── README.md
 
 # Alur Kerja Aplikasi
 User Buka Aplikasi → Default Search "2025" → Ambil data dari OMDb API
